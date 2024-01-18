@@ -1,0 +1,284 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #ffffff;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #f08808;
+}
+
+.navbar-brand img {
+  max-height: 40px; /* Adjust the max height as needed */
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #000000;
+  transition: background-color 0.3s ease;
+  float: right;
+  text-align: left;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #f08808;
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-color: #f08808;
+}
+
+/* Home Page Styles */
+#home {
+  padding: 40px 0;
+  text-align: center;
+}
+
+h1 {
+  color: #000000;
+}
+
+p {
+  color: #333;
+}
+
+/* Icon Section Styles */
+.icon-section {
+  display: flex;
+  height: 300px;
+  justify-content: space-around;
+  margin-top: 30px; /* Light black background color with transparency */
+  box-shadow: 0 16px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensure rounded corners are applied properly */
+  align-content: center;
+  .smart-agriculture {
+    background-color: #325221;
+    border-radius: 15px;
+  }
+}
+
+.icon-section a {
+  text-decoration: none;
+  color: #333;
+}
+.icon-section a img {
+  height: 150px;
+  width: auto;
+}
+
+/* Call-to-Action Button Styles */
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f08808;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #000000;
+}
+/* Add your custom styles for the hero section */
+
+#hero-section {
+  padding: 20px;
+  background: url("img/bg-bottom.jpg") no-repeat center bottom;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  height: 500px;
+}
+
+.hero-overlay {
+  background: rgba(25, 43, 16, 0.644);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  padding: 20px;
+
+  margin-top: 20px;
+
+  max-width: 400%; /* Set the max-width for a larger content area */
+}
+
+/* Adjust font size and weight */
+#hero-section h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  top: 5%;
+  left: 5%;
+}
+
+#hero-section p {
+  font-size: 1.2em; /* Increase the font size */
+
+  color: #ffffff;
+  margin-bottom: 20px;
+  top: 5%;
+  left: 5%;
+}
+.hero-spiral {
+  width: 100%;
+}
+.btn-outline-light {
+  margin-left: 10px;
+  background-color: #f08808;
+  top: 5%;
+  left: 5%;
+}
+.hero-image img {
+  max-width: auto;
+  height: 500px;
+  margin-left: 1000px;
+  margin-top: 30px;
+}
+/* ----------marketing---------- */
+.marketing {
+  animation: moveRightToLeft 10s linear infinite;
+}
+
+/* --------Services Section -------*/
+
+#services {
+  padding: 80px 0;
+  margin-top: 20px;
+}
+.services {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  border-radius: 15px; /* Add rounded corners */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.farm-img {
+  width: 150px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.icon-section {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px; /* Add padding for space around the items */
+  margin-top: 50px; /* Adjust the margin-top to move the icon area down */
+}
+
+.icon-item {
+  text-align: center;
+  color: #fff;
+}
+
+.icon-item img {
+  height: 150px; /* Set the height of the icon images */
+  width: auto; /* Maintain the aspect ratio */
+  margin-bottom: 15px; /* Add space below the images */
+  border-radius: 10px;
+}
+
+.icon-item p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.btn-outline-light {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.btn-outline-light:hover {
+  background-color: #f08808;
+  color: #000;
+}
+.title::before {
+  content: "";
+  background: #f08808;
+  height: 5px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+.title::after {
+  content: "";
+  background: #f08808;
+  height: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(8px);
+}
+
+/*--------------- Footer ---------------*/
+#footer {
+  background-image: linear-gradient(to right, #000 60px, #f08808);
+}
+.spiral {
+  width: 100%;
+}
+.footer-box {
+  padding: 2px;
+}
+.footer-box img {
+  width: 120px;
+}
+.footer-box p {
+  text-align: left;
+  color: #fff;
+  padding: 10px;
+}
+
+/*---------------- Copyright ---------------*/
+.copyright {
+  padding: 20px;
+  background-color: #f08808;
+  text-align: center;
+}
